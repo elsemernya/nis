@@ -222,10 +222,10 @@ window.addEventListener('load', function () {
         arg.Inputs.input1.Values.push(p);
 
         jQuery.ajax({
-            url: "https://ocrwebapp1.azure-api.net/predict/score",
+            url: "https://ocrweebapp.azure-api.net/httpbin/score",
             beforeSend: function (xhrObj) {
                 xhrObj.setRequestHeader("Content-Type", "application/json;charset=utf-8");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "873777b57097490b993f65d5f9542066");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "b69a430ec05a439887d26a40eb70cd60");
             },
             type: "POST",
             data: JSON.stringify(arg)
